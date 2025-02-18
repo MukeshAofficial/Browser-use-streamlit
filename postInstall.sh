@@ -1,1 +1,2 @@
-python -m playwright install --with-deps
+#!/bin/bash
+/home/appuser/.conda/bin/python -m playwright install --with-deps
