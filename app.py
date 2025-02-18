@@ -8,10 +8,10 @@ from PIL import Image
 import io
 import base64
 import subprocess
-import playwright
 
-# Install browsers if not already installed
-subprocess.run(["playwright", "install", "--with-deps"], check=True)
+async def setup_playwright():
+    subprocess.run(["playwright", "install", "chromium"], check=True)
+
 
 
 # Streamlit UI setup
