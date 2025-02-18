@@ -7,6 +7,12 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from PIL import Image
 import io
 import base64
+import subprocess
+import playwright
+
+# Install browsers if not already installed
+subprocess.run(["playwright", "install", "--with-deps"], check=True)
+
 
 # Streamlit UI setup
 st.title("🔎 Browser Use Agent")  # Updated title with emoji
