@@ -16,6 +16,7 @@ async def setup_playwright():
 
 # Streamlit UI setup
 st.title("🔎 Browser Use Agent")  # Updated title with emoji
+st.write("❤️ Built by [Build Fast with AI](https://buildfastwithai.com/genai-course)")
 
 # Sidebar for API key input
 with st.sidebar:
